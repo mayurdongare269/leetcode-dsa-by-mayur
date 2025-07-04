@@ -4,6 +4,7 @@ class Solution { // monotonic stack problem... for circular arr
         int nge[] = new int[n];
         Stack<Integer> st = new Stack<>();
 
+        //traverse twise for circular arr...
         for(int i = 2*n - 1; i >= 0; i--) {
             int idx = i % n;
             while(!st.isEmpty() && st.peek() <= nums[idx]) {
