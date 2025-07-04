@@ -14,7 +14,7 @@ class Solution { // monotonic stack problem... for circular arr
             if(st.isEmpty()) {
                 nge[idx] = -1;
             } else {
-                nge[idx] = st.peek();
+                nge[idx] = st.peek(); //
             }
 
             st.push(nums[idx]);
