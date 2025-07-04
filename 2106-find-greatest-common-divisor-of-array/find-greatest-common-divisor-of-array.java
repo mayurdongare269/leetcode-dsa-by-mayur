@@ -1,12 +1,20 @@
 class Solution {
     public int findGCD(int[] nums) {
-        Arrays.sort(nums);
+        // Arrays.sort(nums);
 
-        int a = nums[0];
-        int b = nums[nums.length - 1];
+        // int a = nums[0];
+        // int b = nums[nums.length - 1];
 
-        int ans = gcd(a, b);
+        // manually find min and max without sorting
+        int min = nums[0];
+        int max = nums[0];
 
+        for(int num : nums) {
+            if(num < min) min = num;
+            if(num > max) max = num;
+        }
+
+        int ans = gcd(min, max);
         return ans;
     }
 
