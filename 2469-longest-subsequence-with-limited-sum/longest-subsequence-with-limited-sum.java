@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.*; // not solved yet .. 
+
 
 class Solution {
     public int[] answerQueries(int[] nums, int[] queries) {
