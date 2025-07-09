@@ -6,7 +6,7 @@ class Solution { // monotonic stack problem... for circular arr
 
         //traverse twise for circular arr...
         for(int i = 2*n - 1; i >= 0; i--) {
-            int idx = i % n;
+            int idx = i % n; // bz of the circular
             while(!st.isEmpty() && st.peek() <= nums[idx]) {
                 st.pop();
             }
