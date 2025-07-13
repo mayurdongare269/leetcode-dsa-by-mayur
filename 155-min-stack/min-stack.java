@@ -54,15 +54,3 @@ class MinStack {
         return (int)min;
     }
 }
-
-/**
- * Explanation of fixes:
- * 1. Changed stack to store Long instead of Integer to prevent overflow
- * 2. Changed min to be long type
- * 3. Added 'L' suffix to numeric literals in calculations (2L * val)
- * 4. Added proper casting when returning int values
- * 
- * This handles the edge cases with large numbers correctly:
- * - When pushing -2147483648, the calculation won't overflow
- * - When restoring previous min, the calculation stays within bounds
- */
