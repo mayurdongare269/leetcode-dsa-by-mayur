@@ -1,7 +1,7 @@
 class Solution {
 
     private boolean check(String s, int i, int j) {
-        if(i > j) {
+        if(i >= j) {
             return true;
         }
 
