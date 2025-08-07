@@ -13,17 +13,17 @@ class Solution {
     public int smallestDivisor(int[] nums, int threshold) {
         int n = nums.length;
         int low = 1;
-        int high = getMax(nums);
+        int high = getMax(nums); //*
 
         // int sum = 0;
         int result = -1;
 
         while(low <= high) {
             int mid = low + (high - low) / 2;
-            int sum = 0; // ✅ Reset sum for each divisor attempt
+            int sum = 0; // ✅ Reset sum for each divisor attempt ** 
 
             for(int num : nums) {
-                sum += (num + mid - 1)/mid;  // this is ceil(num / mid)
+                sum += (num + mid - 1)/mid;  // this is ceil(num / mid)****
             }
 
             // sum += ceil(nums[mid] / mid);
