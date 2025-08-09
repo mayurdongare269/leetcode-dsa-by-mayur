@@ -1,4 +1,5 @@
-class Solution { // similar to Book Allocation Problem and Painter's partition
+class Solution { // similar to Book Allocation Problem and The Painter's Partition Problem-II
+
 
     public int splitArray(int[] nums, int k) {
         return findPages(nums, k);
