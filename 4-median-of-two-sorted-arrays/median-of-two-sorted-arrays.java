@@ -1,4 +1,5 @@
-class Solution {
+class Solution { // there is optimal approach using binary search ... try this!!
+
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n1 = nums1.length, n2 = nums2.length;
         int n = n1 + n2;
