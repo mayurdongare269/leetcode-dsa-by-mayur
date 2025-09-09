@@ -28,3 +28,33 @@ class Solution {
         return (int) ans;
     }
 }
+
+
+
+// class Solution { //TLE.......(●'◡'●)
+//     private static final int MOD = 1_000_000_007;
+
+//     // Recursive function: number of people who learn the secret on "day"
+//     private int solve(int day, int delay, int forget) {
+//         if (day == 1) return 1; // first person learns on day 1
+
+//         long result = 0;
+//         for (int prev = day - forget + 1; prev <= day - delay; prev++) {
+//             if (prev > 0) {
+//                 result = (result + solve(prev, delay, forget)) % MOD;
+//             }
+//         }
+//         return (int) result;
+//     }
+
+//     public int peopleAwareOfSecret(int n, int delay, int forget) {
+//         long total = 0;
+//         for (int day = n - forget + 1; day <= n; day++) {
+//             if (day > 0) {
+//                 total = (total + solve(day, delay, forget)) % MOD;
+//             }
+//         }
+//         return (int) total;
+//     }
+// }
+
