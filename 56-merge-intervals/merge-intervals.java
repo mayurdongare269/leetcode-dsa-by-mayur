@@ -1,4 +1,4 @@
-class Solution {
+class Solution { // done done done... also do leetcode 57 similar...
     public int[][] merge(int[][] intervals) {
         if(intervals == null || intervals.length == 0) {
             return new int[0][0];
