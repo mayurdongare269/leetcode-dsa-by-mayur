@@ -17,5 +17,6 @@ class Solution {
 
         // At the end of loop, low == high and pointing to the smallest element
         return nums[low];
+       
     }
 }
