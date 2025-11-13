@@ -5,7 +5,7 @@ class Solution {
 
     for (int i = 0; i < s.length(); ++i)
       if (s.charAt(i) == '1')
-        ++ones;
+        ones += 1;
       else if (i == s.length() - 1 || s.charAt(i + 1) == '1')
         ans += ones;
 
