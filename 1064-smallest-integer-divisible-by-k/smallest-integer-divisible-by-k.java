@@ -7,7 +7,7 @@ public class _1015_Smallest_Integer_Divisible_By_K {
 
 class Solution {
     public int smallestRepunitDivByK(int k) {
-        // if divisible by 2 or 5 → no such number possible
+        // if divisible by 2 or 5- no such number possible
         if (k % 2 == 0 || k % 5 == 0) return -1;
 
         int rem = 0;
