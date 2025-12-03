@@ -1,4 +1,4 @@
-class Solution {
+class Solution { //not solved
 public:
     int countTrapezoids(vector<vector<int>>& points) {
         int n = points.size();
