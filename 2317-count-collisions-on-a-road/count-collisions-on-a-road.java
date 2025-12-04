@@ -1,14 +1,15 @@
-class Solution {
+class Solution { // done >>>>
+
     public int countCollisions(String directions) {
         int n = directions.length();
         int left = 0, right = n - 1;
 
-        // Ignore all starting L cars (they move left off road)
+        // Ignore all starting L cars bz they never colalide
         while (left < n && directions.charAt(left) == 'L') {
             left++;
         }
 
-        // Ignore all ending R cars (they move right off road)
+        // Ignore all ending R cars
         while (right >= 0 && directions.charAt(right) == 'R') {
             right--;
         }
