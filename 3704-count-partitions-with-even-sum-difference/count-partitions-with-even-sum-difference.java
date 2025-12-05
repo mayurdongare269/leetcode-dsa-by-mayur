@@ -1,4 +1,4 @@
-class Solution {
+class Solution {// done ,.... two pass solution ...
     public int countPartitions(int[] nums) {
         int count = 0;
         int n = nums.length;
